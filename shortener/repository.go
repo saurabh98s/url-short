@@ -1,6 +1,6 @@
 package shortener
 
-type RedirectService interface {
+type RedirectRepository interface {
 	Find(code string) (*Redirect, error)
 	Store(redirect *Redirect) error
 }
